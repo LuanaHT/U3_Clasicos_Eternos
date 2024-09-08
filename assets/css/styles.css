@@ -1,1 +1,107 @@
-/*Responsive
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #e5dad8;
+}
+
+.encabezado{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+}
+
+li{
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    color:black;
+}
+
+a:hover{
+    background-color:beige;
+    color: black;
+    border-radius: 10px;
+}
+
+
+.parrafo1{
+    padding: 25px;
+    align-items: center;
+}
+
+.razones{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+}
+.card{
+    background-color: #e5dad8;
+    width: 350px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  .card::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 2px;
+  }
+
+.card:hover{
+    box-shadow:5px 5px 10px rgba(0,0,0,0.8);
+    transform:translateY(-2)
+}
+
+.contenido{
+    padding: 20px;
+}
+
+p {
+    padding: 10px;
+    margin: 0;
+    line-height: 1.5;
+    flex-wrap: wrap;
+    overscroll-behavior-y: contain;
+}
+
+.final{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
