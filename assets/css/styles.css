@@ -58,6 +58,10 @@ a:hover{
     align-items: center;
 }
 
+.titulo2{
+    padding: 30px;
+}
+
 h3{
     text-align: center;
 }
@@ -105,3 +109,4 @@ p {
     justify-content: center;
     padding: 30px;
 }
+
