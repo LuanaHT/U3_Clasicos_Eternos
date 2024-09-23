@@ -1,0 +1,497 @@
+:root {
+    --primary-color: #c7a17a;
+    --background-color: #f9f5f0;
+    --dark-color: #151515;
+    --color_primario: #8B4513;
+    --color_primario_suave: #c7a07a3e;
+    --altura_header: 80px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1700px; 
+    
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    --box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.25);
+    --neon-color: white;
+    --transition-speed: 0.3s;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to left, #e8ddd3, #b89b87, #a38982, #d0ccc5); /* Background gradient */
+    color: var(--dark-color);
+    margin: 0;
+    padding: 0;
+}
+
+.about-us {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-us h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0px 0px 5px white;
+}
+
+/* Section layout */
+.section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 70px;
+    max-width: var(--ancho_maximo); /* Limita el ancho del contenedor */
+    margin-left: auto; /* Centra el contenido horizontalmente */
+    margin-right: auto; /* Centra el contenido horizontalmente */
+    padding: 0 40px; /* Añade espacio a los lados */
+}
+
+.section {
+    background: white;  /* White background for each section */
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
+    flex: 1 1 45%;
+}
+
+.section h2 {
+    color: var(--color_primario);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+#problematica {
+    grid-column: 1 / span 2; /* Make this section span across two columns */
+}
+
+/* Estructura de las creadoras */
+.creators-section {
+    margin-top: 40px;
+}
+
+.creators-section h2 {
+    margin-bottom: 30px;
+    color: var(--neon-color);
+    text-shadow: 0 0 5px var(--neon-color), 0 0 10px var(--neon-color);
+}
+
+.creators {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (min-width: 1024px) {
+    .creators {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.card {
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: 35px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow-hover);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform var(--transition-speed);
+}
+
+.card:hover img {
+    transform: rotate(360deg);
+}
+
+.card h3 {
+    color: white; /* Cambiado a blanco */
+    margin-top: 15px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transition: text-shadow var(--transition-speed);
+}
+
+.card h3:hover, .card h3:focus {
+    text-shadow: 0 0 5px var(--neon-color), 0 0 10px var(--neon-color);
+    cursor: pointer;
+}
+
+.card p {
+    color: var(--dark-color);
+    font-style: italic;
+}
+
+/* Redes Sociales con efecto de brillo neón */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: var(--dark-color);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color var(--transition-speed), transform var(--transition-speed), text-shadow var(--transition-speed);
+}
+
+.social-icons a:hover {
+    color: var(--neon-color);
+    transform: scale(1.3);
+    text-shadow: 0 0 8px var(--neon-color), 0 0 12px var(--neon-color), 0 0 16px var(--neon-color);
+}
+
+/* Botones de llamada a la acción */
+.button {
+    background-color: var(--color_primario);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.button:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+
+.card {
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+}
+h2 {
+    color: var(--color_primario);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px var(--neon-color), 0 0 10px var(--neon-color);
+}
+/* Adjusting responsiveness for mobile */
+@media (max-width: 768px) {
+    .section-content {
+        grid-template-columns: 1fr;
+    }
+    #problematica {
+        grid-column: auto; /* Span full width on smaller screens */
+    }
+}
+/* Slide-in effect for the menu */
+.menu-icon {
+    display: block;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+	gap: 2rem;
+}
+
+.menu.active {
+    right: 0; 
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu-icon {
+    cursor: pointer;
+    color: var(--dark-color);
+}
+
+
+.container {
+	max-width: 120rem;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.container-navbar {
+	background-color: var(--primary-color);
+}
+
+.navbar {
+	display: flex;
+    padding: 11px 0;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--dark-color);
+    font-weight: 550;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a::after {
+	content: '';
+	width: 1.5rem;
+	height: 1px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+
+.menu a:hover::after {
+	opacity: 1;
+}
+
+.menu a:hover {
+	color: #fff;
+}
+
+.menu-icon, #check {
+	display: none;
+}
+
+@media (max-width: 858px) {
+	.menu-icon {
+		display: block;
+	}
+	
+	.menu {
+        padding: 0;
+		flex-direction: column;
+		position: fixed;
+		width: 100%;
+		background: #d2a87ddf;
+		top: 67px;
+		text-align: center;
+		transition: all .5s;
+	}
+
+	#check:checked ~ .menu {
+		left: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.menu a {
+		font-size: 8px; 
+	}
+}
+
+.menu a:focus {
+	outline: 2px solid var(--primary-color);
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+#check:checked ~ .menu {
+	transform: translateX(0);
+}
+
+.menu li {
+	list-style: none;
+}
+
+.heading-1 {
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.container-navbar {
+	background-color: var(--primary-color);
+}
+
+
+.menu a::after {
+	content: '';
+	width: 1.5rem;
+	height: 1px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+
+
+.menu-icon, #check{
+	display: none;
+}
+
+.kfc {
+    height: 30px;
+}
+
+
+
+@media (max-width: 952px){
+	.search-form{
+		padding-left: 10px;
+		
+	}
+
+	a{
+		font-size: 10px;
+	}
+}
+
+label.menu-icon {
+    /* margin-right: 20px; */
+    margin-left: 20px;
+}
+
+@media (max-width: 858px){
+	.menu-icon{
+		display: block;
+	}
+
+    .navbar {
+        padding: 25px 0;
+    }
+	.menu{
+		flex-direction: column;
+		position: fixed;
+        width: 100%;
+        background: #d2a87ddf;;
+        top: 67px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+	}
+
+    .menu{
+        gap: 10px;
+    }
+	
+	.lin{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+
+	nav ul li{
+        display: block;
+        line-height: 30px;
+    }
+	
+
+	#check:checked ~ ul{
+		left:0;
+	}
+}
+
+@media (max-width: 600px) {
+    .menu a {
+        font-size: 8px; /* Ajustar tamaño de fuente */
+    }
+	
+}
+
+/* Mejora de accesibilidad */
+.menu a:focus {
+    outline: 2px solid var(--primary-color); /* Mejora de accesibilidad al navegar por teclado */
+}
+
+
+
+/* Añadir un efecto de apertura */
+#check:checked ~ .menu {
+    transform: translateX(0); /* Asegúrate de que el menú se desplace correctamente */
+}
+
+/* Estilo de la lista de menú */
+.menu li {
+    list-style: none; /* Asegúrate de que no haya puntos en la lista */
+}
+
+
+
+.menu a::after {
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+.menu a:hover::after {
+    opacity: 1;
+}
+
+.menu.active {
+    left: 0;
+}
+
+.menu ul {
+    margin-top: 50px;
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+label.menu-icon {
+    /* margin-right: 20px; */
+    margin-left: 20px;
+}
+
+/* Añadir un efecto de apertura */
+#check:checked ~ .menu {
+    transform: translateX(0); /* Asegúrate de que el menú se desplace correctamente */
+}
+
+/* Estilo de la lista de menú */
+.menu li {
+    list-style: none; /* Asegúrate de que no haya puntos en la lista */
+}
+
+

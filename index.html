@@ -1,67 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Clasicos Eternos</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="encabezado">
-            <h1>Clasicos Eternos</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Clasicos Eternos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<script src="https://kit.fontawesome.com/4b3ae2cad4.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container-navbar">
+			<nav class="navbar container">
+				<input type="checkbox" id="check" class="checkmenu">
+			    <label for="check" class="menu-icon"><svg class="kfc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></label>
 
-            <nav id="navbar">
-                <ul>
-                    <li class="item"><a href="index.html"">Inicio</a></li>
-                    <li class="item"><a href="2.html">Lista de libros</a></li>
-                    <li class="item"><a href="3.html">Acerca de</a></li>
-                </ul>
-            </nav>
-        </div>
+				<ul class="menu">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="biblioteca.html">Biblioteca</a></li>
+					<li><a href="about-us.html">Acerca de nosotras</a></li>
+				</ul>
+				
+			</nav>
+		</div>
+        
+		<section class="banner">
+			<div class="content-banner">
+				<h2>Descubre los mejores clásicos<br/>de la literatura universal </h2>
+			</div>
+		</section>
+    
+
+        <div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+  
+			  <div class="swiper-slide">
+				<div class="card">
+				  <img src="assets/img/fiction.jpeg" alt="Ficción">
+				  <div class="card-description">
+					<div class="card-title">
+					  <h4>Ficción</h4>
+					</div>
+					<div class="card-text">
+					  <p>Explora mundos imaginarios y personajes fascinantes a través de historias que desafían los límites de la realidad.</p>
+					</div>
+					<div class="card-link">
+						<a href="biblioteca.html?category=Fiction">Ver más</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		
+			  <div class="swiper-slide">
+				<div class="card">
+				  <img src="assets/img/humor.jpeg" alt="Humor">
+				  <div class="card-description">
+					<div class="card-title">
+					  <h4>Humor</h4>
+					</div>
+					<div class="card-text">
+					  <p>Ríete a carcajadas con estos libros llenos de ingenio y situaciones cómicas que garantizan hacerte sonreír.</p>
+					</div>
+					<div class="card-link">
+						<a href="biblioteca.html?category=Humour">Ver más</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		
+			  <div class="swiper-slide">
+				<div class="card">
+				  <img src="assets/img/literatura.jpeg" alt="Literatura">
+				  <div class="card-description">
+					<div class="card-title">
+					  <h4>Literatura</h4>
+					</div>
+					<div class="card-text">
+					  <p>Sumérgete en clásicos y obras maestras literarias que han dejado una huella indeleble en el mundo de las letras.</p>
+					</div>
+					<div class="card-link">
+					  <a href="biblioteca.html?categoryc=Literature">Ver más</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+  
+				<!-- Slide 4 -->
+			  <div class="swiper-slide">
+				  <div class="card">
+					<img src="assets/img/poesia.jpeg" alt="Poesía">
+					<div class="card-description">
+					  <div class="card-title">
+						<h4>Poesía </h4>
+					  </div>
+					  <div class="card-text">
+						<p>Disfruta de la belleza del lenguaje en su forma más pura, con versos que despiertan emociones y reflexiones profundas..</p>
+					  </div>
+					  <div class="card-link">
+						<a href="biblioteca.html?category=Poetry">Ver más</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+  
+				<!-- Slide 5 -->
+			  <div class="swiper-slide">
+				  <div class="card">
+					<img src="assets/img/culture.jpeg" alt="Cultura">
+					<div class="card-description">
+					  <div class="card-title">
+						<h4>Cultura </h4>
+					  </div>
+					  <div class="card-text">
+						<p>Descubre libros que exploran las dinámicas sociales, culturales y las civilizaciones que han moldeado nuestro mundo.</p>
+					  </div>
+					  <div class="card-link">
+						<a href="biblioteca.html?category=Culture/Civilization/Society">Ver más</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+  
+				<!-- Slide 6 -->
+			  <div class="swiper-slide">
+				  <div class="card">
+					<img src="assets/img/historia.jpeg" alt="historia">
+					<div class="card-description">
+					  <div class="card-title">
+						<h4>Historia</h4>
+					  </div>
+					  <div class="card-text">
+						<p>Conoce la historia de nuestros antepasados, desde sus monarquías hasta los momentos que han marcado su evolución.</p>
+					  </div>
+					  <div class="card-link">
+						<a href="biblioteca.html?category=History%20-%20British">Ver más</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+  
+				<!-- Slide 7 -->
+			  <div class="swiper-slide">
+				  <div class="card">
+					<img src="assets/img/greografía.jpeg" alt="Geografía">
+					<div class="card-description">
+					  <div class="card-title">
+						<h4>Geografía</h4>
+					  </div>
+					  <div class="card-text">
+						<p>Aventúrate por lugares exóticos y paisajes desconocidos a través de relatos de viaje y descubrimientos geográficos.</p>
+					  </div>
+					  <div class="card-link">
+						<a href="biblioteca.html?category=Travel%20&%20Geography">Ver más</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+  
+  
+				<!-- Slide 8 -->
+			  <div class="swiper-slide">
+				  <div class="card">
+					<img src="assets/img/Estudio de género.jpeg" alt="Estudio de género">
+					<div class="card-description">
+					  <div class="card-title">
+						<h4>Estudio de género</h4>
+					  </div>
+					  <div class="card-text">
+						<p>Reflexiona sobre la identidad, el género y la sexualidad a través de obras que abordan temas cruciales y contemporáneos.</p>
+					  </div>
+					  <div class="card-link">
+						<a href="biblioteca.html?category=Gender%20&%20Sexuality%20Studies">Ver más</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+  
+				<!-- Slide 9 -->
+			  <div class="swiper-slide">
+				  <div class="card">
+					<img src="assets/img/education.jpeg" alt="Educación">
+					<div class="card-description">
+					  <div class="card-title">
+						<h4>Educación</h4>
+					  </div>
+					  <div class="card-text">
+						<p>Explora libros dedicados a la pedagogía, el aprendizaje y el impacto de la educación en la sociedad.</p>
+					  </div>
+					  <div class="card-link">
+						<a href="biblioteca.html?category=Teaching%20&%20Education">Ver más</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+  
+  <!-- Slide 10 -->
+  <div class="swiper-slide">
+	  <div class="card">
+		<img src="assets/img/Biografias.jpeg" alt="Biografías">
+		<div class="card-description">
+		  <div class="card-title">
+			<h4>Biografías</h4>
+		  </div>
+		  <div class="card-text">
+			<p> Conoce la vida de personajes extraordinarios que han dejado su huella en la historia y en la cultura.</p>
+		  </div>
+		  <div class="card-link">
+			<a href="biblioteca.html?category=Biographies">Ver más</a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  
+	<!-- Slide 11 -->
+  <div class="swiper-slide">
+	  <div class="card">
+		<img src="assets/img/musica.jpeg" alt="Música">
+		<div class="card-description">
+		  <div class="card-title">
+			<h4>Música</h4>
+		  </div>
+		  <div class="card-text">
+			<p>Sumérgete en el mundo de la música a través de historias sobre compositores, intérpretes y el impacto cultural de la música.</p>
+		  </div>
+		  <div class="card-link">
+			<a href="biblioteca.html?category=Music">Ver más</a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  
+	<!-- Slide 12 -->
+  <div class="swiper-slide">
+	  <div class="card">
+		<img src="assets/img/Lenguaje y comunicación.jpeg" alt="Lenguaje">
+		<div class="card-description">
+		  <div class="card-title">
+			<h4>Lenguaje</h4>
+		  </div>
+		  <div class="card-text">
+			<p>Descubre la ciencia detrás de las palabras y cómo el lenguaje nos conecta, nos transforma y da forma a nuestras sociedades.</p>
+		  </div>
+		  <div class="card-link">
+			<a href="biblioteca.html?category=Language%20&%20Communication">Ver más</a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  
+	 <!-- Slide 13 -->
+  <div class="swiper-slide">
+	  <div class="card">
+		<img src="assets/img/Lectura para niños y jóvenes.jpeg" alt="Para Niños y adolescentes">
+		<div class="card-description">
+		  <div class="card-title">
+			<h4>Niños y adolescentes</h4>
+		  </div>
+		  <div class="card-text">
+			<p>Aventuras y enseñanzas especialmente creadas para los más jóvenes, donde el aprendizaje y la diversión van de la mano.</p>
+		  </div>
+		  <div class="card-link">
+			<a href="biblioteca.html?category=Children%20&%20Young%20Adult%20Reading">Ver más</a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  
+	<!-- Slide 14 -->
+  <div class="swiper-slide">
+	  <div class="card">
+		<img src="assets/img/Terror.jpeg" alt="Terror">
+		<div class="card-description">
+		  <div class="card-title">
+			<h4>Terror</h4>
+		  </div>
+		  <div class="card-text">
+			<p>Sumérgete en lo desconocido y siente el escalofrío de estas historias que te dejarán sin aliento y al borde de tu asiento.</p>
+		  </div>
+		  <div class="card-link">
+			<a href="biblioteca.html?category=Horror">Ver más</a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  
+  
+	  </div>
+	  <div class="swiper-button-next"></div>
+	  <div class="swiper-button-prev"></div>
+	  <div class="swiper-pagination"></div>
+	</div>
+  
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="assets/js/slides.js" ></script>
 
 
-        <div class="parrafo1">
-            <h2>Descubre los clasicos de la literatura universal</h2>
-            
-        </div>
+		<footer class="footer">
+			<div class="container container-footer">
+				<div class="menu-footer">
+					<div class="contact-info">
+						<p class="title-footer">Información de Contacto</p>
+						<ul>
+							<li>
+								Dirección: Lima-Perú
+							</li>
+							
+							<li>EmaiL: chicastec@support.com</li>
+						</ul>
+						<div class="social-icons">
+							<span class="facebook">
+								<i class="fa-brands fa-facebook-f"></i>
+							</span>
+							<span class="twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</span>
+							<span class="youtube">
+								<i class="fa-brands fa-youtube"></i>
+							</span>
+							<span class="pinterest">
+								<i class="fa-brands fa-pinterest-p"></i>
+							</span>
+							<span class="instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</span>
+						</div>
+					</div>
 
-        <div class="titulo2">
-            <h2>Explora las siguientes categorias</h2>
-        </div>
-        <div class="razones">
-            
-            <div class="card">
-                <div class="contenido">
-                    <h3>Top 10 libros mas populares</h3>
-                    <p>Los libros clásicos han perdurado a lo largo de los años por su profundidad, relevancia y capacidad para resonar con lectores de diferentes épocas. Aquí presentamos una selección de los 10 libros clásicos más populares, cada uno conocido por su impacto literario y cultural.</p>  
-                    <button type="button">Ver mas</button>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="contenido">
-                    <h3>Nuevas Aventuras y Aprendizajes Geniales</h3>
-                    <p> Este viaje no es solo para divertirme, también es una oportunidad para aprender cosas nuevas y vivir experiencias emocionantes. ¡Es como una gran aventura que me ayudará a crecer y a prepararme para el futuro! Tu apoyo me permitirá vivir esta experiencia y regresar con historias geniales.</p>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="contenido">
-                    <h3>Creación de Recuerdos Duraderos</h3>
-                    <p>Apoyarme en este viaje significa contribuir a la creación de recuerdos inolvidables que valoraré para siempre. Su generoso apoyo no solo facilitara el viaje, sino que también fortalecera nuestro vínculo familiar al ser parte de este significativo y especial capítulo de mi vida.</p>   
-                </div>
-            </div>
-        </div>
+					<div class="information">
+						<p class="title-footer">Información</p>
+						<ul>
+							<li><a href="about-us.html">Acerca de Nosotras</a></li>
+						</ul>
+					</div>
 
-        <div class="final">
-            <h3>footer?</h3>
-        </div>
+				
+					<div class="newsletter">
+						<p class="title-footer">Comunicate con nosotras!!</p>
 
-    </div>
-    <script src="assets/js/scrpit.js"></script>
-</body>
+						<div class="content">
+							<p>
+								Déjanos tu correo para que, te recordemos tus sesiones de lectura y
+								tengas el hábito de lectura.
+							</p>
+							<input type="email" placeholder="Ingresa el correo aquí...">
+							<button>Listo</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="copyright">
+					<p>
+						Todos los derechos de autor &copy; 2024
+					</p>
+
+				</div>
+			</div>
+		</footer>
+		<script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+		<script src="assets/js/index.js"></script>
+		
+	</body>
 </html>
